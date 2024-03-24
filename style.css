@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility classes  */
+.min-h-screen{
+    min-height: 100vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.font-bold{
+    font-weight: bolder;
+}
+
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.my-2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.px-2{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.text-blue{
+    color: rgb(227 74 56);;
+}
+
+.btn{
+    padding:7px 12px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(227 74 56);;
+}
+
+.btn:hover{
+    color: rgba(0, 0, 0, 0.801);
+    background-color: rgb(255, 80, 60);
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Syling Css */
+
+.container{
+    max-width: 80vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    height: 67px;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover{
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 80, 60);
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle button by default */
+}
+
+#demo{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color:#711e15;
+}
+
+.topleft{
+    width: 50%;
+}
+
+.topright{ 
+    width: 50%;
+}
+
+.section1{
+   max-height: 100vh; 
+   color: #711e15;
+}
+
+.section1 h1{
+    color: #37110d;
+    font-size: 2rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.dumbellimg{
+    width: 289px;
+}
+
+.topright .gymimg{
+    width: 380px;
+}
+
+.section2{
+    padding: 73px;
+}
+
+.section2 h1{
+    font-size: 2.3rem;
+}
+
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(120, 54, 16);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul{
+    list-style-type: none;
+}
+
+.box ul li{
+    margin: 12px 2px;
+}
+
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table{
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th{ 
+    width: 23vw; 
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+} 
+
+.section3 table td{   
+    border-bottom: 2px solid black; 
+} 
+ 
+
+.section3 h1{
+    font-size: 2.3rem;
+}
+
+.section3{
+    height:90vh;
+    padding: 73px;
+}
+
+footer{
+    padding: 23px;
+    text-align: center;
+}
+
+.section4 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(227 74 56);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 1000px) {
+    .section1 {
+        max-height: 150vh; 
+    }
+}
+    
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar items by default */
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        background-color: #ff8b8b; /* Change the background color to a different shade */
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease; /* Add transition for smoother animation */
+        z-index: 1000; /* Ensure navbar is on top of other elements */
+    }
+
+    .navbar.show-navbar {
+        display: flex; /* Show navbar when the show-navbar class is applied */
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 10px 0;
+        color: #333; /* Change text color to improve visibility */
+        text-decoration: none;
+        background-color: #ff8b8b; 
+    }
+
+    .navbar li a:hover {
+        background-color: #e5e5e5; /* Change background color on hover to improve visibility */
+    }
+
+    .menu-toggle {
+        display: block; /* Display menu toggle button */
+        cursor: pointer;
+    }
+
+    .bg{
+        background-color: #ff8b8b;
+    }
+
+    .topleft{
+        width: 100%;
+    }
+    
+    .topright{ 
+        width: 100%;
+    }
+    
+    .section1{
+       max-height: 500vh; 
+    }
+
+    .resp{
+        flex-direction: column;
+    }
+    
+    .section1 h1{
+        font-size: 2rem;
+    }
+
+    .dumbellimg{
+        width: 120px;
+    }
+    
+    .topright .gymimg{
+        width: 190px;
+    }
+
+    .section2{
+        padding: 23px;
+    }
+    
+    .section2 h1{
+        font-size: 2rem;
+    }
+    
+    .section2 p{
+        padding: 8px;
+        text-align: center;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        padding: 8px 0;
+        margin: 12px 22px;
+        min-width: 50vw;
+        border: 2px solid rgb(120, 54, 16);
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .box h2{
+        font-size: 1.5rem;
+        padding: 15px 0;
+    }
+
+    .section3 table th{ 
+        width: 23vw; 
+        border-bottom: 2px solid black;
+        padding: 5px;
+    } 
+    
+     
+    
+    .section3 h1{
+        font-size: 2rem;
+    }
+    
+    .section3{
+        padding: 23px;
+    }
+
+    .section4{
+        min-height: 80vh;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .section4 h1{
+        font-size: 2rem;
+    }
+    
+    .contact-form input, textarea{
+        width: 70%;
+    }
+
+    .section4 h1{
+        font-size: 2rem;
+    }
+
+}
+
+
+
